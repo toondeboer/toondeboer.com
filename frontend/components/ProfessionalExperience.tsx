@@ -25,7 +25,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
   const experiences = [
     {
       id: "accenture",
-      title: "Senior Full-Stack Software Engineer",
+      title: "Senior Software Engineer",
       company: "Accenture",
       period: "Mar 2024 - Present",
       startDate: "2024-03-01", // For dynamic calculation
@@ -47,7 +47,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
     },
     {
       id: "navara",
-      title: "Full-Stack Software Engineer",
+      title: "Software Engineer",
       company: "NAVARA",
       period: "Aug 2022 - Feb 2024",
       duration: "1 yr 7 mos",
@@ -68,7 +68,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
       projects: [
         {
           id: "truqu",
-          title: "Full-Stack Software Engineer",
+          title: "Software Engineer",
           company: "TruQu - performance & talent management software",
           period: "May 2023 - Feb 2024",
           duration: "10 mos",
@@ -89,7 +89,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
         },
         {
           id: "pwn",
-          title: "Full-Stack Software Engineer",
+          title: "Software Engineer",
           company: "PWN",
           period: "Jan 2023 - May 2023",
           duration: "5 mos",
@@ -110,7 +110,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
         },
         {
           id: "vaneck",
-          title: "Full-Stack Software Engineer",
+          title: "Software Engineer",
           company: "VanEck",
           period: "Aug 2022 - Jan 2023",
           duration: "6 mos",
@@ -171,7 +171,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
     },
     {
       id: "fbidesign",
-      title: "Full-Stack Software Engineer",
+      title: "Software Engineer",
       company: "FBIdesign",
       period: "Feb 2019 - Jun 2019",
       duration: "5 mos",
