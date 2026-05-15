@@ -409,7 +409,7 @@ const HomeScreen = () => {
                   <ImageLoadingOverlay isLoading={isLoading} shape="round" />
                   <Image
                     src={HEADSHOT}
-                    alt="Toon de Boer - Full Stack Developer"
+                    alt="Toon de Boer - Software Engineer"
                     width={144}
                     height={144}
                     className={`w-full h-full object-cover rounded-full transition-opacity duration-500 ${
@@ -442,7 +442,7 @@ const HomeScreen = () => {
             </div>
             <h1 className="text-5xl sm:text-7xl font-bold mb-6 relative">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
-                Full Stack Developer
+                Software Engineer
               </span>
             </h1>
             <p
@@ -497,7 +497,7 @@ const HomeScreen = () => {
             >
               {"I'm a "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold">
-                passionate full stack developer
+                passionate Software Engineer
               </span>{" "}
               who loves turning complex problems into simple, beautiful
               solutions.
@@ -548,7 +548,7 @@ const HomeScreen = () => {
                   />
                   <Image
                     src={HEADSHOT}
-                    alt="Toon de Boer - Full Stack Developer"
+                    alt="Toon de Boer - Software Engineer"
                     width={320}
                     height={320}
                     className={`w-full h-full object-cover hover:scale-105 transition-transform duration-500 ${
