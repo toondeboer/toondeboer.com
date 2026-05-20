@@ -8,9 +8,11 @@ import {
   Menu,
   X,
   Code,
-  Smartphone,
   Database,
   Globe,
+  Brain,
+  Cpu,
+  Cloud,
   ChevronDown,
   Heart,
 } from "lucide-react";
@@ -149,49 +151,94 @@ const HomeScreen = () => {
 
   const skills = [
     {
-      category: "Frontend",
-      icon: <Globe className="w-6 h-6" />,
+      category: "AI & ML Topics",
+      icon: <Brain className="w-6 h-6" />,
       technologies: [
-        "React",
-        "Angular",
-        "TypeScript",
-        "Next.js",
-        "Tailwind CSS",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
+        "Machine Learning",
+        "Deep Learning",
+        "Reinforcement Learning",
+        "Recommendation Systems",
+        "Data Mining",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Generative AI",
       ],
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-500 to-indigo-500",
       bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
     },
     {
-      category: "Backend",
-      icon: <Database className="w-6 h-6" />,
+      category: "ML & Data Technologies",
+      icon: <Cpu className="w-6 h-6" />,
       technologies: [
-        "Node.js",
-        "Java",
+        "TensorFlow",
+        "PyTorch",
+        "Spark",
+        "Kafka",
+        "Hadoop",
+        "Airflow",
+        "Pandas",
+        "NumPy",
+        "Vector Databases",
+      ],
+      color: "from-purple-500 to-pink-500",
+      bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
+    },
+    {
+      category: "Programming Languages",
+      icon: <Code className="w-6 h-6" />,
+      technologies: [
         "Python",
-        "PostgreSQL",
-        "DynamoDB",
-        "Express.js",
-        "GraphQL",
-        "REST APIs",
+        "Java",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Scala",
       ],
       color: "from-emerald-500 to-teal-500",
       bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
     },
     {
-      category: "Mobile",
-      icon: <Smartphone className="w-6 h-6" />,
-      technologies: ["React Native", "iOS", "Android", "Expo"],
-      color: "from-purple-500 to-pink-500",
+      category: "Backend, Cloud & Infra",
+      icon: <Cloud className="w-6 h-6" />,
+      technologies: [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "PostgreSQL",
+      ],
+      color: "from-sky-500 to-cyan-500",
       bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
     },
     {
-      category: "Tools & Others",
-      icon: <Code className="w-6 h-6" />,
-      technologies: ["Git", "Docker", "AWS", "Azure", "Jest", "CI/CD"],
+      category: "Software Engineering Patterns",
+      icon: <Database className="w-6 h-6" />,
+      technologies: [
+        "Distributed Systems",
+        "REST APIs",
+        "Microservices",
+        "System Design",
+        "Software Architecture",
+        "Clean Architecture",
+      ],
       color: "from-orange-500 to-red-500",
+      bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
+    },
+    {
+      category: "Frontend & Mobile",
+      icon: <Globe className="w-6 h-6" />,
+      technologies: [
+        "React",
+        "Next.js",
+        "Angular",
+        "Node.js",
+        "React Native",
+        "GraphQL",
+        "Express.js",
+        "DynamoDB",
+      ],
+      color: "from-rose-500 to-fuchsia-500",
       bgColor: darkMode ? "bg-gray-800/50" : "bg-white/80",
     },
   ];
@@ -447,21 +494,19 @@ const HomeScreen = () => {
             </div>
             <h1 className="text-5xl sm:text-7xl font-bold mb-6 relative">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
-                Software Engineer
+                AI, ML & Software Projects
               </span>
             </h1>
             <p
               className={`text-xl sm:text-2xl ${darkMode ? "text-gray-300" : "text-gray-600"} mb-8 max-w-4xl mx-auto leading-relaxed`}
             >
-              Crafting{" "}
+              A collection of projects, experiments, and production systems
+              from my work across fintech and enterprise, plus my AI
+              specialization at TU Delft.
+              <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 font-semibold">
-                innovative digital solutions
-              </span>{" "}
-              from concept to deployment. Building apps that{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600 font-semibold">
-                make a difference
+                {" "}Built with modern ML, data, backend, and cloud tooling.
               </span>
-              .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -502,10 +547,9 @@ const HomeScreen = () => {
             >
               {"I'm a "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold">
-                passionate Software Engineer
+                a builder who enjoys mixing software engineering with AI/ML
               </span>{" "}
-              who loves turning complex problems into simple, beautiful
-              solutions.
+              to create useful and fun products.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -517,28 +561,31 @@ const HomeScreen = () => {
               <p
                 className={`${darkMode ? "text-gray-300" : "text-gray-600"} leading-relaxed text-lg`}
               >
-                With years of experience in software development, I specialize
-                in creating{" "}
+                Professionally, I have worked on systems across fintech,
+                banking, and enterprise environments, from internal platforms
+                used by thousands of engineers to cloud-native side projects.
+                The focus is usually on
                 <span className="text-blue-600 font-semibold">
-                  end-to-end solutions
+                  {" "}shipping reliable products end to end
                 </span>{" "}
-                that solve real-world problems. From mobile apps that manage
-                poker tournaments to sophisticated investment tracking
-                platforms, I bring ideas to life with clean, efficient code and{" "}
-                <span className="text-purple-600 font-semibold">
-                  intuitive user experiences
-                </span>
-                .
+                with tools like Python, Java, TypeScript, AWS, Azure, and
+                PostgreSQL.
               </p>
               <p
                 className={`${darkMode ? "text-gray-300" : "text-gray-600"} leading-relaxed text-lg`}
               >
-                {"I'm driven by the challenge of learning new technologies and the satisfaction of building products that " +
-                  "users genuinely love. " +
-                  "When I'm not coding, you'll find me exploring the latest tech trends, contributing to open source, or " +
-                  "planning my next "}
+                Academically, I completed an M.Sc. in Computer Science with an
+                AI specialization at TU Delft, where I focused on machine
+                learning, deep learning, recommendation systems, and MLOps
+                practices for real software delivery.
+              </p>
+              <p
+                className={`${darkMode ? "text-gray-300" : "text-gray-600"} leading-relaxed text-lg`}
+              >
+                This site is a lightweight overview of what I have built,
+                learned, and experimented with across
                 <span className="text-pink-600 font-semibold">
-                  innovative project
+                  {" "}academic and professional projects
                 </span>
                 .
               </p>
@@ -583,14 +630,15 @@ const HomeScreen = () => {
             <p
               className={`text-xl ${darkMode ? "text-gray-300" : "text-gray-600"} max-w-3xl mx-auto`}
             >
-              A comprehensive toolkit for building{" "}
+              Tech stacks and tools I have used across academic work and
+              production projects, with extra focus on
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold">
-                modern, scalable applications
+                {" "}AI/ML and data-intensive systems
               </span>{" "}
-              across platforms.
+              .
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
               <div key={index} className="group relative">
                 <div
@@ -849,9 +897,10 @@ const HomeScreen = () => {
                   <p
                     className={`${darkMode ? "text-gray-300" : "text-gray-600"} mb-6 text-lg`}
                   >
-                    Open to new opportunities and{" "}
+                    Always happy to chat about engineering, AI tooling, and
+                    fun product ideas{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 font-semibold">
-                      interesting projects
+                      or share notes on what I have built
                     </span>
                     !<span className="text-red-400"> 🚀</span>
                   </p>
