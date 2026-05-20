@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Github,
   Linkedin,
-  Mail,
   ExternalLink,
   Moon,
   Sun,
@@ -13,9 +12,6 @@ import {
   Database,
   Globe,
   ChevronDown,
-  Star,
-  Zap,
-  Rocket,
   Heart,
 } from "lucide-react";
 import Image from "next/image";
@@ -24,7 +20,6 @@ import ProfessionalExperience from "@/components/ProfessionalExperience";
 import AcademicExperience from "@/components/AcademicExperience";
 
 const HEADSHOT = "/assets/headshot.jpeg";
-const EMAIL = "toondeboer123@gmail.com";
 
 const HomeScreen = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -426,22 +421,28 @@ const HomeScreen = () => {
                 <div className="absolute inset-0 rounded-full shadow-2xl shadow-purple-500/25"></div>
               </div>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4">
-                <Star
-                  className="w-8 h-8 text-yellow-400 animate-bounce"
+                <span
+                  className="text-3xl animate-bounce inline-block"
                   style={{ animationDelay: "0s" }}
-                />
+                >
+                  ⭐
+                </span>
               </div>
               <div className="absolute top-12 right-1/3 transform translate-x-12">
-                <Zap
-                  className="w-6 h-6 text-orange-400 animate-bounce"
+                <span
+                  className="text-2xl animate-bounce inline-block"
                   style={{ animationDelay: "1s" }}
-                />
+                >
+                  ⚡
+                </span>
               </div>
               <div className="absolute bottom-12 left-1/3 transform -translate-x-12">
-                <Rocket
-                  className="w-7 h-7 text-red-400 animate-bounce"
+                <span
+                  className="text-2xl animate-bounce inline-block"
                   style={{ animationDelay: "2s" }}
-                />
+                >
+                  🚀
+                </span>
               </div>
             </div>
             <h1 className="text-5xl sm:text-7xl font-bold mb-6 relative">
@@ -711,7 +712,7 @@ const HomeScreen = () => {
                             key={featureIndex}
                             className="flex items-center gap-2"
                           >
-                            <Star className="w-3 h-3 text-yellow-500" />
+                            <span aria-hidden="true">✨</span>
                             {feature}
                           </li>
                         ))}
@@ -723,7 +724,7 @@ const HomeScreen = () => {
                         {project.appStore && (
                           <Link href={project.appStore} target="_blank">
                             <button className="flex-1 bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg">
-                              <ExternalLink className="w-4 h-4" />
+                              <span aria-hidden="true">🍎</span>
                               App Store
                             </button>
                           </Link>
@@ -731,7 +732,7 @@ const HomeScreen = () => {
                         {project.googlePlay && (
                           <Link href={project.googlePlay} target="_blank">
                             <button className="flex-1 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg">
-                              <ExternalLink className="w-4 h-4" />
+                              <span aria-hidden="true">🤖</span>
                               Google Play
                             </button>
                           </Link>
@@ -799,24 +800,6 @@ const HomeScreen = () => {
                 className={`relative ${darkMode ? "bg-gray-900/95 border-gray-700/50" : "bg-white/95 border-white/20"} rounded-3xl p-8 shadow-2xl border backdrop-blur-sm`}
               >
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  <a
-                    href={`mailto:${EMAIL}`}
-                    className={`group flex items-center gap-4 p-6 rounded-2xl hover:bg-gradient-to-r ${darkMode ? "hover:from-blue-950/30 hover:to-purple-950/30" : "hover:from-blue-50 hover:to-purple-50"} transition-all duration-300 hover:scale-105 border ${darkMode ? "border-gray-700/50" : "border-gray-200/50"}`}
-                  >
-                    <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Mail className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                        Email
-                      </h3>
-                      <p
-                        className={`${darkMode ? "text-gray-300" : "text-gray-600"}`}
-                      >
-                        {EMAIL}
-                      </p>
-                    </div>
-                  </a>
 
                   <a
                     href="https://linkedin.com/in/toon-de-boer"
@@ -829,7 +812,7 @@ const HomeScreen = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                        LinkedIn
+                        LinkedIn 🤝
                       </h3>
                       <p
                         className={`${darkMode ? "text-gray-300" : "text-gray-600"}`}
@@ -850,7 +833,7 @@ const HomeScreen = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg bg-gradient-to-r from-gray-700 to-purple-600 bg-clip-text text-transparent">
-                        GitHub
+                        GitHub 💻
                       </h3>
                       <p
                         className={`${darkMode ? "text-gray-300" : "text-gray-600"}`}
@@ -860,24 +843,6 @@ const HomeScreen = () => {
                     </div>
                   </a>
 
-                  <div
-                    className={`group flex items-center gap-4 p-6 rounded-2xl hover:bg-gradient-to-r ${darkMode ? "hover:from-emerald-950/30 hover:to-teal-950/30" : "hover:from-emerald-50 hover:to-teal-50"} transition-all duration-300 hover:scale-105 border ${darkMode ? "border-gray-700/50" : "border-gray-200/50"}`}
-                  >
-                    <div className="p-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Globe className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                        Location
-                      </h3>
-                      <p
-                        className={`${darkMode ? "text-gray-300" : "text-gray-600"}`}
-                      >
-                        Available Remotely{" "}
-                        <span className="text-green-500">🌍</span>
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="text-center">
@@ -890,10 +855,14 @@ const HomeScreen = () => {
                     </span>
                     !<span className="text-red-400"> 🚀</span>
                   </p>
-                  <Link href={`mailto:${EMAIL}`}>
+                  <Link
+                    href="https://linkedin.com/in/toon-de-boer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="group bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 hover:from-pink-600 hover:via-purple-600 hover:to-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl shadow-purple-500/25 hover:shadow-2xl hover:shadow-purple-500/40 hover:scale-110">
                       <span className="flex items-center gap-2">
-                        Start a Conversation
+                        Start a Conversation 💬
                         <Heart className="w-5 h-5 group-hover:animate-pulse" />
                       </span>
                     </button>
@@ -920,14 +889,19 @@ const HomeScreen = () => {
               . Built with React, TypeScript, and Next.js.
             </p>
             <div className="flex justify-center items-center gap-2 mt-4">
-              <Star className="w-4 h-4 text-yellow-400 animate-pulse" />
+              <span className="animate-pulse" aria-hidden="true">
+                ✨
+              </span>
               <span className="text-gray-400">
                 Crafted with passion and precision
               </span>
-              <Star
-                className="w-4 h-4 text-yellow-400 animate-pulse"
+              <span
+                className="animate-pulse"
                 style={{ animationDelay: "1s" }}
-              />
+                aria-hidden="true"
+              >
+                ✨
+              </span>
             </div>
           </div>
         </div>

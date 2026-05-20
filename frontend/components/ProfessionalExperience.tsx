@@ -1,5 +1,4 @@
 import React from "react";
-import { Download, ExternalLink, Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
 
 // Helper function to calculate dynamic duration
@@ -275,12 +274,8 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
                       </p>
                       <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                         <span className="flex items-center gap-1">
-                          <Calendar size={14} />
+                          <span aria-hidden="true">🗓️</span>
                           {exp.period} · {exp.duration}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <MapPin size={14} />
-                          {exp.location}
                         </span>
                       </div>
                     </div>
@@ -323,7 +318,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
                         }
                         className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${exp.bgGradient} text-white rounded-lg hover:shadow-lg transition-all duration-300 flex-shrink-0`}
                       >
-                        <Download size={16} />
+                        <span aria-hidden="true">📄</span>
                         Download PDF
                       </button>
                     </div>
@@ -336,7 +331,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
                     <h4
                       className={`text-lg font-semibold ${darkMode ? "text-white" : "text-gray-900"} mb-4 flex items-center gap-2`}
                     >
-                      <ExternalLink size={18} />
+                      <span aria-hidden="true">🤝</span>
                       Client Projects
                     </h4>
                     <div className="space-y-4">

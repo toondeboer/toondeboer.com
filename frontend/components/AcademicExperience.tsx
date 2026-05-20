@@ -1,5 +1,4 @@
 import React from "react";
-import { Calendar, GraduationCap, BookOpen, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 type AcademicExperienceProps = {
@@ -162,7 +161,7 @@ const AcademicExperience = ({ darkMode }: AcademicExperienceProps) => {
                       {item.institution}
                     </p>
                     <p className="text-sm text-gray-500 flex items-center gap-2">
-                      <Calendar size={14} />
+                      <span aria-hidden="true">🗓️</span>
                       {item.period}
                     </p>
                   </div>
@@ -183,7 +182,7 @@ const AcademicExperience = ({ darkMode }: AcademicExperienceProps) => {
                   <h4
                     className={`text-lg font-semibold ${darkMode ? "text-white" : "text-gray-900"} mb-3 flex items-center gap-2`}
                   >
-                    <BookOpen size={18} />
+                    <span aria-hidden="true">📚</span>
                     Relevant Coursework
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -206,7 +205,7 @@ const AcademicExperience = ({ darkMode }: AcademicExperienceProps) => {
                   <h4
                     className={`text-lg font-semibold ${darkMode ? "text-white" : "text-gray-900"} mb-4 flex items-center gap-2`}
                   >
-                    <ExternalLink size={18} />
+                    <span aria-hidden="true">🌍</span>
                     Exchange Programs
                   </h4>
                   <div className="space-y-4">
@@ -275,7 +274,7 @@ const AcademicExperience = ({ darkMode }: AcademicExperienceProps) => {
             <h3
               className={`text-2xl font-bold mb-4 ${darkMode ? "text-white" : "text-gray-900"} flex items-center gap-2`}
             >
-              <GraduationCap size={24} />
+              <span aria-hidden="true">🎓</span>
               Certificates
             </h3>
             <div className="space-y-2">
