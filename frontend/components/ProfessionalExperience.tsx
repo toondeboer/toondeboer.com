@@ -25,20 +25,23 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
   const experiences = [
     {
       id: "accenture",
-      title: "Senior Software Engineer",
+      title: "Senior Analyst - Software Engineer",
       company: "Accenture",
       period: "Mar 2024 - Present",
       startDate: "2024-03-01", // For dynamic calculation
       duration: calculateDuration("2024-03-01"),
       location: "Amsterdam, North Holland, Netherlands",
       description:
-        "Contributed to the development of a regulatory monitoring tool used by over 8000 engineers at a major Dutch bank. Improved compliance visibility and remediation by implementing a React/TypeScript frontend and Node.js/PostgreSQL backend with Azure DevOps API integrations. Participated in architectural design discussions using clean architecture principles and patterns like Factory and Strategy. Helped integrate observability tools including Piano Analytics, Splunk, and Split.io.",
+        "Led development of a regulatory monitoring platform used by 8,000+ engineers at a major Dutch bank. Built scalable full-stack capabilities with React, TypeScript, Node.js, PostgreSQL, and Azure DevOps APIs, and improved observability through Split.io, Piano Analytics, and Splunk. Organized internal experimentation sessions with Cursor, OpenAI APIs, and Ollama, resulting in working prototypes and knowledge-sharing presentations. Completed internal trainings in Data Science, Generative AI, Data Management, and Data Visualization while mentoring engineers and interviewing software candidates.",
       skills: [
         "React",
         "TypeScript",
+        "Node.js",
         "Java",
         "PostgreSQL",
         "Azure DevOps Services",
+        "Generative AI",
+        "OpenAI APIs",
       ],
       logoPlaceholder: "accenture.jpeg",
       brandColor: "#931CF5",
@@ -53,7 +56,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
       duration: "1 yr 7 mos",
       location: "Amsterdam, North Holland, Netherlands",
       description:
-        "Worked as a consultant on a range of full-stack development projects for clients across finance, utilities, and HR sectors. Designed and implemented scalable web applications using Angular, Node.js, C#, and SQL. Focused on clean architecture, maintainability, and automated testing. Collaborated with cross-functional teams to deliver robust and production-ready solutions, adapting quickly to each client's tech stack and domain.",
+        "Developed enterprise web applications and backend integrations using Angular, Node.js, SQL, Azure, and C#. Built features for performance management, investment, and workflow automation platforms. Implemented CI/CD pipelines, automated testing, and scalable frontend state management while working with cross-functional teams in multiple client domains.",
       skills: [
         "Angular",
         "TypeScript",
@@ -74,7 +77,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
           duration: "10 mos",
           location: "Driebergen-Rijsenburg, Utrecht, Netherlands",
           description:
-            "Developed features for a performance tracking web application using Angular, Node.js, and SQL on Azure. Ensured production reliability through CI/CD pipeline automation and Cypress end-to-end testing. Took part in technical planning meetings and conducted research to support robust feature development.",
+            "Developed core features for performance and talent management software using Angular, Node.js, SQL, and Azure. Improved engineering delivery with CI/CD automation, Cypress end-to-end testing, technical planning, and architecture-focused implementation.",
           skills: [
             "Angular",
             "Node.js",
@@ -95,7 +98,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
           duration: "5 mos",
           location: "Velserbroek, North Holland, Netherlands",
           description:
-            "Migrated legacy Drupal CMS forms into reusable Angular web components. Modernized backend services using C#, Node.js, and SQL to align with current web standards and improve system maintainability.",
+            "Modernized workflow automation capabilities by migrating Drupal forms to reusable Angular components and updating backend services with C#, Node.js, and SQL for better maintainability.",
           skills: [
             "Angular",
             "TypeScript",
@@ -116,7 +119,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
           duration: "6 mos",
           location: "Amsterdam, North Holland, Netherlands",
           description:
-            "Built Angular components and secure REST APIs for user identity verification and payment processing, integrating third-party services. Managed application state using NgRx and supported deployment across various environments.",
+            "Built Angular components and secure REST APIs for user identity verification and payment processing, including third-party integrations. Managed state with NgRx and supported releases across multiple environments.",
           skills: ["Angular", "TypeScript", "NgRx", "Azure DevOps Services"],
           logoPlaceholder: "vaneck.jpeg",
           brandColor: "#24458B",
@@ -133,7 +136,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
       duration: "2 yrs 5 mos",
       location: "Amsterdam, North Holland, Netherlands",
       description:
-        "Automated invoice processing in Workday using Java, reducing manual workload by over 40 hours monthly. Developed scripts to parse and categorize multi-currency invoices efficiently, improving accounting operations. Built a Java and SQL-based backend integrated with Adyen's API to support real-time product demonstrations during live events.",
+        "Conducted empirical research on software development workflows across engineering teams as part of thesis research. Analyzed GitHub workflow and merge request data with Python to evaluate engineering productivity and development efficiency. Automated invoice processing in Workday using Java, reducing manual effort by 40+ hours per month, and developed Java/SQL backend services integrated with the Adyen API for real-time payment demonstrations.",
       skills: ["Java", "SQL", "Workday Integration", "Python"],
       logoPlaceholder: "adyen.jpeg",
       brandColor: "#57BC60",
@@ -156,7 +159,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
       duration: "4 mos",
       location: "Amsterdam, North Holland, Netherlands",
       description:
-        "Developed a Scala-based decision engine using actor model architecture, reducing processing time from 21 seconds to 1.2 seconds. Demonstrated the benefits of concurrent processing and efficient logic design.",
+        "Developed a high-performance decision engine in Scala using actor-model concurrency patterns. Reduced execution latency from 21 seconds to 1.2 seconds through architectural optimization.",
       skills: ["Scala", "Python", "Quantitative Research"],
       logoPlaceholder: "finaps.jpeg",
       brandColor: "#F2AE3D",
@@ -177,7 +180,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
       duration: "5 mos",
       location: "Haarlem, North Holland, Netherlands",
       description:
-        "Built a cross-platform mobile app in React Native to give construction workers easy access to training videos and manuals. Focused on intuitive UI and accessibility for non-technical users.",
+        "Developed a React Native mobile application enabling construction workers to access tutorials, manuals, and operational knowledge on iOS and Android devices.",
       skills: ["React Native", "TypeScript", "HTML", "CSS", "SQL"],
       logoPlaceholder: "fbi.jpeg",
       brandColor: "#E05C31",
@@ -222,11 +225,11 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
               darkMode ? "text-gray-300" : "text-gray-600"
             } max-w-3xl mx-auto`}
           >
-            My journey as a{" "}
+            Building production software with a strong foundation in{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600 font-semibold">
-              software engineer
+              backend engineering, cloud systems, and applied AI/ML
             </span>
-            , building solutions and growing with amazing teams.
+            .
           </p>
         </div>
 

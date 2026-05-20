@@ -21,6 +21,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
+import AcademicExperience from "@/components/AcademicExperience";
 
 const HEADSHOT = "/assets/headshot.jpeg";
 const EMAIL = "toondeboer123@gmail.com";
@@ -58,6 +59,7 @@ const HomeScreen = () => {
         "skills",
         "projects",
         "experience",
+        "academic",
         "contact",
       ];
       const current = sections.find((section) => {
@@ -309,6 +311,7 @@ const HomeScreen = () => {
                 "Skills",
                 "Projects",
                 "Experience",
+                "Academic",
                 "Contact",
               ].map((item) => (
                 <button
@@ -380,6 +383,7 @@ const HomeScreen = () => {
                 "Skills",
                 "Projects",
                 "Experience",
+                "Academic",
                 "Contact",
               ].map((item) => (
                 <button
@@ -758,6 +762,9 @@ const HomeScreen = () => {
 
       {/* Experience Section */}
       <ProfessionalExperience darkMode={darkMode} />
+
+      {/* Academic Section */}
+      <AcademicExperience darkMode={darkMode} />
 
       {/* Contact Section */}
       <section id="contact" className="py-24 relative overflow-hidden">
