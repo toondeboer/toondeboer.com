@@ -130,7 +130,7 @@ const HomeScreen = () => {
       ],
       appStore: undefined,
       googlePlay: undefined,
-      website: "https://investments-tracker.toondeboer.com/",
+      website: "https://sailor.toondeboer.com/",
       gradient: "from-violet-400 via-purple-500 to-indigo-600",
       icon: "📈",
     },
