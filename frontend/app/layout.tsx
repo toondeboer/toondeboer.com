@@ -15,6 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google AdSense site verification. Approving this top-level domain
+            also covers its subdomains (e.g. poker-timer.toondeboer.com). */}
+        <meta name="google-adsense-account" content="ca-pub-9738048037268359" />
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-13MH57QZWG`}
