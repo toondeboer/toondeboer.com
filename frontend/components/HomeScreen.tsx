@@ -99,7 +99,21 @@ const HomeScreen = () => {
     setMobileMenuOpen(false);
   };
 
-  const projects = [
+  type Project = {
+    title: string;
+    description: string;
+    technologies: string[];
+    features: string[];
+    appStore?: string;
+    googlePlay?: string;
+    website?: string;
+    github?: string;
+    gradient: string;
+    icon: string;
+    comingSoon?: boolean;
+  };
+
+  const projects: Project[] = [
     {
       title: "Poker Timer App",
       description:
@@ -135,17 +149,31 @@ const HomeScreen = () => {
       icon: "📈",
     },
     {
-      title: "Future Project Slot",
+      title: "DrillPlan",
       description:
-        "This space is reserved for upcoming innovative projects that will showcase cutting-edge technologies and solutions.",
-      technologies: ["TBD", "Exciting Tech", "Innovation"],
-      features: ["Coming Soon", "Stay Tuned"],
+        "A browser-based planner that computes optimal soil-investigation drilling locations across a site, spreading points evenly while keeping same-type measurements as far apart as possible.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "ml-kmeans",
+        "PapaParse",
+      ],
+      features: [
+        "Even Point Distribution (K-Means)",
+        "Iterated Local Search Optimization",
+        "Interactive Color-Coded Maps",
+        "CSV Import & CSV/PNG Export",
+        "Runs Fully In-Browser (Private)",
+        "Dutch & English Support",
+      ],
       appStore: undefined,
       googlePlay: undefined,
-      website: undefined,
-      gradient: "from-orange-400 via-pink-500 to-red-600",
-      icon: "🚀",
-      comingSoon: true,
+      website: "https://drillplan.toondeboer.com/",
+      github: "https://github.com/toondeboer/drillplan",
+      gradient: "from-amber-400 via-orange-500 to-red-600",
+      icon: "🗺️",
     },
   ];
 
@@ -790,6 +818,14 @@ const HomeScreen = () => {
                             <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg">
                               <ExternalLink className="w-4 h-4" />
                               Open Website
+                            </button>
+                          </Link>
+                        )}
+                        {project.github && (
+                          <Link href={project.github} target="_blank">
+                            <button className="flex-1 bg-gradient-to-r from-gray-700 to-gray-900 text-white px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg">
+                              <Github className="w-4 h-4" />
+                              View Code
                             </button>
                           </Link>
                         )}
