@@ -153,14 +153,14 @@ const HomeScreen = () => {
     {
       title: "DrillPlan",
       description:
-        "A browser-based planner that computes optimal soil-investigation drilling locations across a site, spreading points evenly while keeping same-type measurements as far apart as possible.",
+        "A browser-based planner that uses machine learning to compute optimal soil-investigation drilling locations. It applies K-Means clustering and iterated local-search optimization to spread points evenly while keeping same-type measurements as far apart as possible.",
       technologies: [
+        "Machine Learning",
+        "K-Means Clustering",
         "Next.js",
         "React",
         "TypeScript",
         "Tailwind CSS",
-        "ml-kmeans",
-        "PapaParse",
       ],
       features: [
         "Even Point Distribution (K-Means)",
@@ -188,6 +188,8 @@ const HomeScreen = () => {
         "Deep Learning",
         "Reinforcement Learning",
         "Recommendation Systems",
+        "Clustering",
+        "Optimization Algorithms",
         "Data Mining",
         "Feature Engineering",
         "Model Evaluation",
