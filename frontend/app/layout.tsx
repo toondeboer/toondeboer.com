@@ -2,10 +2,35 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 
+const title = "Toon de Boer | AI & Software Engineer";
+const description =
+  "Software engineer with an AI specialization from TU Delft. This is where my side projects live.";
+
 export const metadata: Metadata = {
-  title: "Toon de Boer | AI & Software Engineer",
-  description:
-    "Software engineer with an AI specialization from TU Delft. This is where my side projects live.",
+  metadataBase: new URL("https://toondeboer.com"),
+  title,
+  description,
+  openGraph: {
+    type: "website",
+    url: "https://toondeboer.com",
+    siteName: "Toon de Boer",
+    title,
+    description,
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Toon de Boer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
