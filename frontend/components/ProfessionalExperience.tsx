@@ -24,14 +24,14 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
   const experiences = [
     {
       id: "accenture",
-      title: "Senior Analyst - Software Engineer",
+      title: "Advanced App Engineering Specialist",
       company: "Accenture",
       period: "Mar 2024 - Present",
       startDate: "2024-03-01", // For dynamic calculation
       duration: calculateDuration("2024-03-01"),
       location: "Amsterdam, North Holland, Netherlands",
       description:
-        "Led development of a regulatory monitoring platform used by 8,000+ engineers at a major Dutch bank. Built scalable full-stack capabilities with React, TypeScript, Node.js, PostgreSQL, and Azure DevOps APIs, integrating data supplied by other engineering teams across the bank through GraphQL APIs, and improved observability through Split.io, Piano Analytics, and Splunk. Organized internal experimentation sessions with Cursor, OpenAI APIs, and Ollama, resulting in working prototypes and knowledge-sharing presentations. Completed internal trainings in Data Science, Generative AI, Data Management, and Data Visualization while mentoring engineers and interviewing software candidates.",
+        "Backend-focused full-stack engineer on a greenfield compliance and security dashboard for a major Dutch bank, used by 8,000+ engineers and managers. Promoted to Advanced App Engineering Specialist in June 2026. Built scalable full-stack capabilities with React, TypeScript, Node.js, PostgreSQL, and Azure DevOps APIs, integrating data supplied by other engineering teams across the bank through GraphQL APIs, and improved observability through Harness, Piano Analytics, and Splunk. Organized internal experimentation sessions with Cursor, OpenAI APIs, and Ollama, resulting in working prototypes and knowledge-sharing presentations. Completed internal trainings in Data Science, Generative AI, Data Management, and Data Visualization while mentoring engineers and interviewing software candidates.",
       skills: [
         "React",
         "TypeScript",
@@ -72,7 +72,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
         {
           id: "truqu",
           title: "Software Engineer",
-          company: "TruQu - performance & talent management software",
+          company: "Nela (formerly TruQu) - performance & talent management software",
           period: "May 2023 - Feb 2024",
           duration: "10 mos",
           location: "Driebergen-Rijsenburg, Utrecht, Netherlands",
@@ -147,7 +147,7 @@ const ProfessionalExperience = ({ darkMode }: { darkMode: boolean }) => {
         period: "Mar 2021 - Nov 2021",
         duration: "9 mos",
         description:
-          "Conducted a field study on migrating from trunk-based development to merge requests. Interviewed and surveyed developers across teams and analyzed GitHub data using Python. Delivered actionable insights that improved code quality and team velocity.",
+          "Conducted a field study on migrating from trunk-based development to merge requests, combining 19 developer interviews, 46 survey responses, and a Python analysis of 40,000+ code reviews. After the migration, 62% of reviews were closed within a day, compared to 19% before. Delivered actionable insights that improved code quality and team velocity.",
         downloadFile: "Master_Thesis_Toon_de_Boer_Adyen.pdf",
       },
     },
